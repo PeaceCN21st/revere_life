@@ -7,6 +7,7 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 如今中国政府的维稳费已经超过军事费用，万一政权不稳，将有重大战乱屠杀隐患，老百姓的的不公可能会得到肆无忌惮的宣泄。
 
 在一些反共言群组上，有人小组投票要杀光中国共产党员来抵命，赞成率102：52（66%）
+
 ![https://imgchr.com/i/Cuer0P]( https://imgchr.com/i/Cuer0P )
 
 > https://telegram.me/ANTICCPVIAKILLSOFCCP

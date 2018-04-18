@@ -1,6 +1,8 @@
 # revere_life
 # 敬畏生命、敬畏自然、敬畏神灵
+
 Antitheist in China must revere life for peace and not revenge byself, as there are many treat-unjustly in China mainland masked by censorship by GFW 
+
 中国大陆的无神论者必须 对敬畏神灵、敬畏自然、敬畏生命，来保障21世纪的华夏平安，因为在大陆有这太多的不公不审查制度核国家防火墙所掩盖。
 如今中国政府的维稳费已经超过军事费用，万一政权不稳，将有重大战乱屠杀隐患，老百姓的的不公可能会得到肆无忌惮的宣泄。
 

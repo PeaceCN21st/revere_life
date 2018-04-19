@@ -31,4 +31,5 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 
 ## 本仓库旨在警醒国人心中隐藏的恶，希望恶龙的故事不要循环下去
 
-- 一起贡献来警醒华人issues/留言加入团队/pull request
+一起贡献来警醒华人  [贡献须知](/contribute_readme.md)
+- issues/留言加入团队/pull request

@@ -37,7 +37,9 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 3. 政治学/史
 4. 未来学
 5. 科技史
-6. ...
+6. 修行
+7. 其他与善有关
+8. ...
 
 一起贡献来警醒华人  [贡献须知](/contribute_readme.md)
 - issues/留言加入团队/pull request

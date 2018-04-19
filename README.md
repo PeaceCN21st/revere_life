@@ -27,3 +27,8 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 这种不公必须得到安抚、调节、释放， 否则是重大和平威胁，更何况中国有核弹，一旦冲突后果不堪设想
 
 如果不能放下私仇，冷静下来由司法判决，否则将是不尽地互相残害
+
+
+
+
+- 一起贡献来警醒华人issues/留言加入团队/pull request

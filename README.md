@@ -29,6 +29,6 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 如果不能放下私仇，冷静下来由司法判决，否则将是不尽地互相残害
 
 
-
+## 本仓库旨在警醒国人心中隐藏的恶，希望恶龙的故事不要循环下去
 
 - 一起贡献来警醒华人issues/留言加入团队/pull request

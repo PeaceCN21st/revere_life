@@ -28,18 +28,48 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 
 如果不能放下私仇，冷静下来由司法判决，否则将是不尽地互相残害
 
+---
 
-## 本仓库旨在警醒国人心中隐藏的恶，希望恶龙的故事不要循环下去
-#### 话题范围
+## 本项目旨在警醒国人心中隐藏的恶，希望恶龙的故事不要循环下去
+
+#### 文章目录
+
+​	[和平与信仰 peaceAndBelief](peaceAndBelief/peaceAndBelief.md)
+
+
+####  话题范围（”人类文明“导向）
 
 1. 文明史/人类史/宗教文明
 2. 道德伦理
-3. 政治学/史
+3. 政治学/史/哲学
+4. 法理学/宪法学
 4. 未来学
-5. 科技史
-6. 修行
-7. 其他与善有关
+6. 科技史
 8. ...
 
-一起贡献来警醒华人  [贡献须知](/contribute_readme.md)
+#####  推荐书目 
+
+1. 《社会学精要》——李银河
+2. 《杨小凯文集》——杨小凯
+
+##### 推荐文章
+
+1. 《美国独立宣言》
+2. 《共产党宣言》
+3. 《我有一个梦想》（I have a dream） 马丁·路德·金
+
+
+
+#####  友情链接
+
+1. [电子书声援计划](https://t.me/what_youread)
+
+
+
+####  一起贡献   [贡献须知](/contribute_readme.md)
+
 - issues/留言加入团队/pull request
+
+
+copyright : PeaceCN21st 畏然和平
+

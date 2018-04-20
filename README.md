@@ -36,6 +36,8 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 
 ​	[和平与信仰 peaceAndBelief](peaceAndBelief/peaceAndBelief.md)
 
+​	[火影的世界和平观](peaceAndBelief/worldPeaceViewOfNaruto.md)
+
 
 ####  话题范围（”人类文明“导向）
 

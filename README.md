@@ -53,7 +53,11 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 
 1. 《社会学精要》——李银河
 2. 《杨小凯文集》——杨小凯
-
+3. 《中国哲学简史》——冯友兰
+4. 《西方哲学史》——罗素
+4. 《西方哲学史》——邓晓芒
+5. 《纯然理性界限内的宗教》——康德
+6. 《文明之光》——吴军
 ##### 推荐文章
 
 1. 《美国独立宣言》

@@ -11,9 +11,10 @@
 
 ### 非github 常用用户tips
 1. 编辑器：typora ，全平台支持
-2. github web端添加文件夹 ： 文件名后加 “/”
-3. 提交发布： 使用typora编辑后的 文本源码
-4. .md后缀 文本文件，github语法渲染
+2. [Markdown语法学习](https://www.zybuluo.com/rain/note/114189)
+3. github web端添加文件夹 ： 文件名后加 “/”
+4. 提交发布： 使用typora编辑后的 文本源码
+5. .md后缀 文本文件，github语法渲染
 
 
 ### 著作权须知

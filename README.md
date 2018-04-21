@@ -3,8 +3,8 @@
 
 Antitheist in China must revere life for peace and not revenge byself, as there are many treat-unjustly in China mainland masked by censorship by GFW 
 
-中国大陆的无神论者必须 对敬畏神灵、敬畏自然、敬畏生命，来保障21世纪的华夏平安，因为在大陆有这太多的不公不审查制度核国家防火墙所掩盖。
-如今中国政府的维稳费已经超过军事费用，万一政权不稳，老百姓的的不公可能会得到肆无忌惮的宣泄，将有重大战乱屠杀隐患。
+中国大陆的无神论者必须 敬畏自然、敬畏生命、敬畏神灵，来保障21世纪的华夏平安，因为在大陆有太多的不公被审查制度和国家防火墙所掩盖。
+如今中国政府的维稳费已经超过军事费用，万一政权不稳，大陆绝大多数持唯物主义无宗教信仰，老百姓的不公可能会得到肆无忌惮的宣泄，将有重大战乱屠杀隐患。
 
 在一些反共言群组上，有人小组投票要杀光中国共产党员来抵命，赞成率102：52（66%）
 
@@ -57,6 +57,7 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 4. 《西方哲学史》——罗素
 4. 《西方哲学史》——邓晓芒
 5. 《纯然理性界限内的宗教》——康德
+5. 《新伦理与资本主义精神》——马克斯·韦伯
 6. 《文明之光》——吴军
 ##### 推荐文章
 

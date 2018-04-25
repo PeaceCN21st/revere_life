@@ -72,7 +72,7 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 1. [电子书声援计划](https://t.me/what_youread)
 1. [info-cn 端点星](https://github.com/Info-cn/Terminus)
 1. [MetaMask browser extension](https://github.com/MetaMask/metamask-extension)
-1. [MetaMask 永久写入信息教程](https://github.com/Info-cn/Terminus/blob/master/_posts/2018-04-24-blockchain.md)
+1. [MetaMask 永久写入区块链 教程](https://github.com/Info-cn/Terminus/blob/master/_posts/2018-04-24-blockchain.md)
 
 
 

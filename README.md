@@ -70,6 +70,7 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 #####  友情链接
 
 1. [电子书声援计划](https://t.me/what_youread)
+1. [info-cn 端点星](https://github.com/Info-cn/Terminus)
 
 
 

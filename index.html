@@ -16,49 +16,47 @@
   
   <div id="app"></div>
   
+
+
   <script>
     window.$docsify = {
-      repo: 'revere_life',
-      maxLevel: 3,
-      coverpage: false
+       repo: 'PeaceCN21st/revere_life',
+       maxLevel: 3,
+       coverpage: false,
+
+      search: 'auto', // default
+
+      search : [
+        '/',            // => /README.md
+        '/justiceAndBelief',       // => /justiceAndBelief.md
+        '/get-started', // => /get-started.md
+        '/zh-cn/',      // => /zh-cn/README.md
+      ],
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: [], // or 'auto'
+        placeholder: 'Type to search',
+
+        // Localization
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+
+        noData: 'No Results!',
+
+        // Localization
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+
+        // Headline depth, 1 - 6
+        depth: 2
+      }
     }
-  </script>
-
-  <script>
-  window.$docsify = {
-    search: 'auto', // default
-
-    search : [
-      '/',            // => /README.md
-      '/justiceAndBelief',       // => /justiceAndBelief.md
-      '/get-started', // => /get-started.md
-      '/zh-cn/',      // => /zh-cn/README.md
-    ],
-
-    // complete configuration parameters
-    search: {
-      maxAge: 86400000, // Expiration time, the default one day
-      paths: [], // or 'auto'
-      placeholder: 'Type to search',
-
-      // Localization
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/': 'Type to search'
-      },
-
-      noData: 'No Results!',
-
-      // Localization
-      noData: {
-        '/zh-cn/': '找不到结果',
-        '/': 'No Results'
-      },
-
-      // Headline depth, 1 - 6
-      depth: 2
-    }
-  }
   </script>
   
   

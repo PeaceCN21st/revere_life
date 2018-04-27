@@ -1,36 +1,36 @@
 
 /* gitalk */
 .gt-container a {
-  color: #0074d9;
+  color: #425638;
 }
 .gt-container a:hover {
   color: #C3B393;
   border-color: #C3B393;
 }
 .gt-container .gt-svg svg {
-  fill: #0074d9;
+  fill: #425638;
 }
 .gt-container .gt-spinner::before {
-  border-top-color: #0074d9;
+  border-top-color: #425638;
 }
 .gt-container .gt-btn {
-  background-color: #0074d9;
+  background-color: #425638;
 }
 .gt-container .gt-btn:hover {
   background-color: #C3B393;
 }
 .gt-container .gt-link {
-  border-bottom: 1px dotted #0074d9;
+  border-bottom: 1px dotted #425638;
 }
 .gt-container .gt-user .is--poping .gt-ico svg {
-  fill: #0074d9;
+  fill: #425638;
 }
 .gt-container .gt-popup .gt-action.is--active:before {
-  background: #0074d9;
+  background: #425638;
 }
 .gt-container .gt-header-controls-tip {
-  color: #0074d9;
+  color: #425638;
 }
 .gt-container .gt-comment-username {
-  color: #0074d9;
+  color: #425638;
 }

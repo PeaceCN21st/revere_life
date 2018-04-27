@@ -49,30 +49,14 @@ Antitheist in China must revere life for peace and not revenge byself, as there 
 6. 科技史
 8. ...
 
-#####  推荐书目 
 
-1. 《社会学精要》——李银河
-2. 《杨小凯文集》——杨小凯
-3. 《中国哲学简史》——冯友兰
-4. 《西方哲学史》——罗素
-4. 《西方哲学史》——邓晓芒
-5. 《纯然理性界限内的宗教》——康德
-5. 《新伦理与资本主义精神》——马克斯·韦伯
-6. 《文明之光》——吴军
-##### 推荐文章
+- [书单/文章](/books.md)
 
-1. 《美国独立宣言》
-2. 《共产党宣言》
-3. 《我有一个梦想》（I have a dream） 马丁·路德·金
-
-
-
-#####  友情链接
-
-1. [电子书声援计划](https://t.me/what_youread)
-1. [info-cn 端点星](https://github.com/Info-cn/Terminus)
-1. [MetaMask browser extension](https://github.com/MetaMask/metamask-extension)
-1. [MetaMask 永久写入区块链 教程](https://github.com/Info-cn/Terminus/blob/master/_posts/2018-04-24-blockchain.md)
+- 友情链接
+    - [电子书声援计划](https://t.me/what_youread)
+    - [info-cn 端点星](https://github.com/Info-cn/Terminus)
+    - [MetaMask browser extension](https://github.com/MetaMask/metamask-extension)
+    - [MetaMask 永久写入区块链 教程](https://github.com/Info-cn/Terminus/blob/master/_posts/2018-04-24-blockchain.md)
 
 
 

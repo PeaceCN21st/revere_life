@@ -15,57 +15,42 @@
 <body>
   
   <div id="app"></div>
-
-<script>
-  gitalkConfig = {
-      clientID: 'f55bc681d3c2e5acd447',
-      clientSecret: '58d536ed4f4bab81899441c9ce9970044273a1cc',
-      repo: 'revere_life',
-      owner: 'PeaceCN21st',
-      admin: ['xinmu99','PeaceCN21st'],
-      distractionFreeMode: false
-    },
+  <script>
     window.$docsify = {
-      repo: "PeaceCN21st/revere_life",
-      loadSidebar: "sidebar.html",
-      subMaxLevel: 3,
-      search: {
-        noData: {
-          '/': '找不到结果!'
-        },
-        paths: 'auto',
-        placeholder: {
-          '/': '搜索'
-        }
+    repo: 'PeaceCN21st/revere_life',
+      
+    search: 'auto', // default
+    search : [
+      '/',            // => /README.md
+      '/guide',       // => /guide.md
+      '/get-started', // => /get-started.md
+      '/zh-cn/',      // => /zh-cn/README.md
+    ],
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: 'auto',
+      placeholder: 'Type to search',
+      // Localization
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search'
       },
-      plugins: [
-        function (hook, vm) {
-          hook.doneEach(function () {
-            var label, domObj, main, divEle, gitalk;
-            label = decodeURI(vm.route.path.split('/').join('').split('.')[0]).substring(0, 49);
-            domObj = Docsify.dom;
-            main = domObj.getNode("#main");
-            /**
-             * render gittalk
-             */
-            Array.apply(null, document.querySelectorAll("div.gitalk-container")).forEach(function (ele) {
-              ele.remove()
-            });
-            divEle = domObj.create("div");
-            divEle.id = "gitalk-container-" + label;
-            divEle.className = "gitalk-container";
-            divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
-            domObj.appendTo(domObj.find(".content"), divEle);
-            gitalk = new Gitalk(Object.assign(gitalkConfig, {
-              id: !label ? "home" : label
-            }))
-            gitalk.render('gitalk-container-' + label)
-          })
-        }
-      ]
+      noData: 'No Results!',
+      // Localization
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results'
+      },
+      // Headline depth, 1 - 6
+      depth: 3
+    }
+  }
+    
   
-
 </script>
+  
+  //<script src="//unpkg.com/docsify/lib/docsify.js" data-load-navbar="sidebar.md"></script>
   
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
@@ -75,6 +60,16 @@
  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
  
+  <script>
+  const gitalk = new Gitalk({
+      clientID: 'f55bc681d3c2e5acd447',
+      clientSecret: '58d536ed4f4bab81899441c9ce9970044273a1cc',
+      repo: 'revere_life',
+      owner: 'PeaceCN21st',
+      admin: ['xinmu99','PeaceCN21st'],
+      distractionFreeMode: false
+  })
+</script>
   
 </body>
 </html>

@@ -24,38 +24,17 @@
        maxLevel: 6,
        coverpage: false,
 
-      search: 'auto', // default
-
-      search : [
-        '/',            // => /README.md
-        '/justiceAndBelief',       // => /justiceAndBelief.md
-        '/get-started', // => /get-started.md
-        '/zh-cn/',      // => /zh-cn/README.md
-      ],
-
       // complete configuration parameters
+      loadSidebar: "sidebar.html",
+      subMaxLevel: 2,
       search: {
-        maxAge: 86400000, // Expiration time, the default one day
-        paths: [], // or 'auto'
-        placeholder: 'Type to search',
-
-        // Localization
-        placeholder: {
-          '/zh-cn/': '搜索',
-          '/': 'Type to search'
-        },
-
-        noData: 'No Results!',
-
-        // Localization
         noData: {
-          '/zh-cn/': '找不到结果',
-          '/': 'No Results'
+          '/': '找不到结果!'
         },
-
-        // Headline depth, 1 - 6
-        depth: 2
-      }
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        }
     }
   </script>
   

@@ -1,4 +1,4 @@
-<!-- docs/sidebar.md -->
+<!-- docs/sidebar.md 
 ---
 title: sidebar
 ---
@@ -8,3 +8,4 @@ title: sidebar
 	
     {% endif %}
 {% endfor %}
+-->

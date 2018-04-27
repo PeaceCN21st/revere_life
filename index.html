@@ -17,12 +17,36 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-    repo: 'PeaceCN21st/revere_life',
-    loadSidebar: true,
-    search: 'auto', // default
-
+      repo: 'PeaceCN21st/revere_life',
+      loadSidebar: true,
+      subMaxLevel: 4,
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+      },
+      
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: 'auto',
+      placeholder: 'Type to search',
+      // Localization
+      placeholder: {
+        '/zh-cn/': '搜索',
+        '/': 'Type to search'
+      },
+      noData: 'No Results!',
+      // Localization
+      noData: {
+        '/zh-cn/': '找不到结果',
+        '/': 'No Results'
+      },
+      // Headline depth, 1 - 6
+      depth: 3
+    }
   }
-
+    
+  
 </script>
   
   <!--<script src="//unpkg.com/docsify/lib/docsify.js" data-load-navbar="sidebar.md"></script> -->

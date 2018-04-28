@@ -14,7 +14,9 @@
 1. 《美国独立宣言》
 2. 《共产党宣言》
 3. 《我有一个梦想》（I have a dream） 马丁·路德·金
+4. [《programthink名言收集》](https://program-think.blogspot.com/2014/08/maxim.html)
+
 
 ## ebooks书库/网盘
 
-- [编程随想onedrive_share](https://onedrive.live.com/?id=F5B0090663FEEADA%21742&cid=F5B0090663FEEADA) [>list](https://github.com/programthink/books)
+- [programthink onedrive_share](https://onedrive.live.com/?id=F5B0090663FEEADA%21742&cid=F5B0090663FEEADA) [>list](https://github.com/programthink/books)

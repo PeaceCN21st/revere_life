@@ -29,11 +29,9 @@
         previousText: '上一章节',
         nextText: '下一章节',
       },
-      
       search:  'auto'
   }
-    
-  
+
 </script>
   
   <!--<script src="//unpkg.com/docsify/lib/docsify.js" data-load-navbar="sidebar.md"></script> -->
@@ -45,17 +43,84 @@
 
  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
- 
   <script>
-  const gitalk = new Gitalk({
-      clientID: 'f55bc681d3c2e5acd447',
-      clientSecret: '58d536ed4f4bab81899441c9ce9970044273a1cc',
-      repo: 'revere_life',
-      owner: 'PeaceCN21st',
-      admin: ['xinmu99','PeaceCN21st'],
-      distractionFreeMode: false
-  })
-</script>
+    const gitalk = new Gitalk({
+        clientID: 'f55bc681d3c2e5acd447',
+        clientSecret: '58d536ed4f4bab81899441c9ce9970044273a1cc',
+        repo: 'revere_life',
+        owner: 'PeaceCN21st',
+        admin: ['xinmu99','PeaceCN21st'],
+        distractionFreeMode: false
+    })
+  </script>
+  
+  <script src='"https://peacecn21st.github.io/revere_life/static/sidebar.js"'></script>
+  <script>
+
+      var filetypes = ['md']; //
+
+      var c = $docsify.repo.split("/");
+      c[c.length-2] + c[c.length-1];
+      var file_tree = "https://api.github.com/repos/" + c[c.length-2] +'/'+ c[c.length-1] + "/git/trees/master?recursive=1&_="+ Date.parse(new Date());
+
+      var getree = [];
+      ajax({
+          method: 'get',
+          url: file_tree,
+          success: function (response) {      // 此处为执行成功后的代码
+             getree = JSON.parse(response);
+             //github_filetree(getree, div_nav, filetypes)  // static/sidebar.js
+          },
+          fail:function (status) {
+              console.log('状态码为'+status);
+          }
+
+      });
+
+      function addsidebar(){
+          var div_nav = document.querySelector('div.sidebar-nav')
+          div_nav.innerText = '';
+          create_contents(div_nav); // static/sidebar.js
+
+          var d_iv = document.createElement('div');
+          div_nav.appendChild(d_iv);
+          d_iv.setAttribute('id','addsidebarok');
+
+          var li = document.createElement('li');
+          d_iv.appendChild(li);
+
+          var a = document.createElement('a');
+          li.appendChild(a);
+          a.innerText = '> home';
+          a.setAttribute('href',$docsify.nameLink);
+
+          github_filetree(getree, div_nav, filetypes);
+
+          /*active current site*/
+          var site = document.location.href.split('?')[0].split('#');
+          site = site[site.length-1];
+          if (site==='') {
+              var active = div_nav.querySelector('div#addsidebarok li');
+          }else  {
+              var active = div_nav.querySelector('a[href*="'+decodeURI(site)+'"]');
+          }
+          active.parentElement.setAttribute('class', 'active');
+      }
+
+      var x = document.location.href.split('?')[0];
+      setInterval(function(){
+          if (document.location.href.split('?')[0]!=x) {
+              x = document.location.href.split('?')[0];
+              addsidebar();
+          }
+          else if (!document.querySelector('#addsidebarok')) {
+              addsidebar();
+          }
+          console.log('sidebar 1')
+      },3000);
+
+    </script>
+  
   
 </body>
 </html>

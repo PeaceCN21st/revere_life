@@ -34,3 +34,21 @@
 .gt-container .gt-comment-username {
   color: #425638;
 }
+
+
+/* sidebar */
+.sidebar div {
+    padding-left:5px;
+}
+.sidebar ul{
+    padding-left:15px;
+}
+.sidebar li{
+    margin-left: 0px;
+}
+
+.sidebar ul li.active>a {
+    border-right: 2px solid;
+    color: #425638;
+    font-weight: 600;
+}

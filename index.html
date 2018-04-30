@@ -83,6 +83,8 @@
           div_sidebar.appendChild(div_nav);
           div_nav.setAttribute('class','githubtree');
         
+          github_filetree(getree, div_nav, filetypes);
+        
           var d_ul = document.createElement('ul');
           div_nav.appendChild(d_ul);
           d_ul.setAttribute('id','addsidebarok');
@@ -94,15 +96,13 @@
           a.innerHTML = '<strong>home</strong>';
           a.setAttribute('href',$docsify.nameLink);
 
-          github_filetree(getree, div_nav, filetypes);
-
 
           var div_nav = document.querySelector('div.sidebar-nav')
           /*active current site*/
           var site = document.location.href.split('?')[0].split('#');
           site = site[site.length-1];
           if (site==='') {
-              var active = div_nav.querySelector('#addsidebarok li');
+              var active = div_nav.querySelector('#addsidebarok a');
           }else  {
               var active = div_nav.querySelector('a[href*="'+decodeURI(site)+'"]');
           }

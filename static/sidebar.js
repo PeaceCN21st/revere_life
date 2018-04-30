@@ -1,5 +1,54 @@
 //-*- coding: utf-8 -*-
 
+function make_filenav(filenav_param){
+    if (!filenav_param.file_tree_url && !filenav_paramgtihub_repo) {
+        console.log("file_tree_url and gtihub_repo is null")
+        return;
+    };
+
+    if (filenav_param.file_tree_url) {
+        var file_tree = filenav_param.file_tree_url
+    }else{
+        var file_tree = "https://api.github.com/repos/" +
+        filenav_param.gtihub_repo +
+        "/git/trees/master?recursive=1&_="+
+        Date.parse(new Date());
+    };
+
+
+    var filetypes = filenav_param.filetypes || ['md']; //
+    var sidebar_css = filenav_param.sidebar_css || 'div.sidebar-nav'; //
+    var home = filenav_param.gtihub_repo.split('/')[1] || '#'
+
+    var getree = [];
+    ajax({
+        method: 'get',
+        url: file_tree,
+        success: function (response) {      // 此处为执行成功后的代码
+           getree = JSON.parse(response);
+           //github_filetree(getree, div_nav, filetypes)  // static/sidebar.js
+        },
+        fail:function (status) {
+            console.log('状态码为'+status);
+        }
+
+    });
+
+
+    var x = document.location.href.split('?')[0];
+    setInterval(function(){
+        if (!document.querySelector('#addsidebarok')) {
+            addsidebar(getree, sidebar_css,home);
+            console.log('sidebar 1');
+        }
+        if (document.location.href.split('?')[0]!=x) {
+            x = document.location.href.split('?')[0];
+            fucos();
+        }
+    },3000);
+
+}
+
 
 function ajax(opt) {
         opt = opt || {};

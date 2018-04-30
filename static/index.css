@@ -36,6 +36,13 @@
 }
 
 
+/*sidebar contents*/
+.sidebar ul li.active>a {
+    border-right: 2px solid;
+    color: #425638;
+    font-weight: 600;
+}
+
 /* sidebar githubtree */
 .githubtree>ul {
     padding-left:10px;
@@ -48,11 +55,6 @@
     padding-left:0px;
 }
 
-.githubtree ul li.active>a {
-    border-right: 2px solid;
-    color: #425638;
-    font-weight: 600;
-}
 ul[folder]>a {
     font-family: -webkit-body;
 }

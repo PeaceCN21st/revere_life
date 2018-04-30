@@ -82,11 +82,12 @@
           var div_nav = document.createElement('div');
           div_sidebar.appendChild(div_nav);
           div_nav.setAttribute('class','githubtree');
+     
+          var d_ul = document.createElement('ul');
+          div_nav.appendChild(d_ul);
         
           github_filetree(getree, div_nav, filetypes);
         
-          var d_ul = document.createElement('ul');
-          div_nav.appendChild(d_ul);
           d_ul.setAttribute('id','addsidebarok');
           var li = document.createElement('li');
           d_ul.appendChild(li);

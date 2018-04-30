@@ -80,7 +80,7 @@ function github_filetree (getree, div_nav, filetypes) {
 
                         ul.appendChild(li);
                         var a = document.createElement('a');
-                        a.innerText = fles[i];
+                        ul.innerHTML= '<a>'+fles[i]+'</a>';
                         a.setAttribute('href','#/'+pa);
 
                         li.appendChild(a);

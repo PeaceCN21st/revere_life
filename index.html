@@ -78,10 +78,12 @@
       });
 
       function addsidebar(){
-          var div_nav = document.querySelector('div.sidebar-nav')
-          div_nav.innerText = '';
-          create_contents(div_nav); // static/sidebar.js
-
+          var div_sidebar = document.querySelector('div.sidebar-nav')
+          //div_nav.innerText = '';
+          //create_contents(div_nav); // static/sidebar.js
+          var div_nav = document.createElement('div');
+          div_sidebar.parentElement.appendChild(div_nav);
+        
           var d_ul = document.createElement('ul');
           div_nav.appendChild(d_ul);
           d_ul.setAttribute('id','addsidebarok');

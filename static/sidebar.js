@@ -1,54 +1,5 @@
 //-*- coding: utf-8 -*-
 
-function make_filenav(filenav_param){
-    if (!filenav_param.file_tree_url && !filenav_paramgtihub_repo) {
-        console.log("file_tree_url and gtihub_repo is null")
-        return;
-    };
-
-    if (filenav_param.file_tree_url) {
-        var file_tree = filenav_param.file_tree_url
-    }else{
-        var file_tree = "https://api.github.com/repos/" +
-        filenav_param.gtihub_repo +
-        "/git/trees/master?recursive=1&_="+
-        Date.parse(new Date());
-    };
-
-
-    var filetypes = filenav_param.filetypes || ['md']; //
-    var sidebar_css = filenav_param.sidebar_css || 'div.sidebar-nav'; //
-    var home = filenav_param.gtihub_repo.split('/')[1] || '#'
-
-    var getree = [];
-    ajax({
-        method: 'get',
-        url: file_tree,
-        success: function (response) {      // 此处为执行成功后的代码
-           getree = JSON.parse(response);
-           //github_filetree(getree, div_nav, filetypes)  // static/sidebar.js
-        },
-        fail:function (status) {
-            console.log('状态码为'+status);
-        }
-
-    });
-
-
-    var x = document.location.href.split('?')[0];
-    setInterval(function(){
-        if (!document.querySelector('#addsidebarok')) {
-            addsidebar(getree, sidebar_css,home);
-            console.log('sidebar 1');
-        }
-        if (document.location.href.split('?')[0]!=x) {
-            x = document.location.href.split('?')[0];
-            fucos();
-        }
-    },3000);
-
-}
-
 
 function ajax(opt) {
         opt = opt || {};
@@ -112,7 +63,7 @@ function create_contents(div_nav) {
 
 function github_filetree (getree, div_nav, filetypes) {
 
-    var z_da_t = getree.tree;
+    z_da_t = getree.tree;
     for (var k = 0; k <= z_da_t.length - 1; k++) {
         var pa = z_da_t[k]['path'];
         var type_ = pa.split('.');
@@ -129,7 +80,7 @@ function github_filetree (getree, div_nav, filetypes) {
 
                         ul.appendChild(li);
                         var a = document.createElement('a');
-                        ul.innerHTML= '<a>'+fles[i]+'</a>';
+                        a.innerText = fles[i];
                         a.setAttribute('href','#/'+pa);
 
                         li.appendChild(a);
@@ -138,7 +89,7 @@ function github_filetree (getree, div_nav, filetypes) {
                     }else {
                         var ul = document.createElement('ul');
                         ul.setAttribute('folder', fles[i]);
-                        ul.innerText = fles[i];
+                        ul.innerHTML= '<a>'+fles[i]+'</a>';
                         this_node.appendChild(ul);
                         this_node = ul;
                     }
@@ -150,5 +101,101 @@ function github_filetree (getree, div_nav, filetypes) {
             };
         };
     };
+
+}
+
+
+
+function fucos() {
+    var div_nav = document.querySelector('div.sidebar-nav')
+    /*active current site*/
+    var site = document.location.href.split('?')[0].split('#');
+    site = site[site.length-1];
+    if (site==='') {
+        var active = div_nav.querySelector('#addsidebarok a');
+    }else  {
+        var active = div_nav.querySelector('a[href*="'+decodeURI(site)+'"]');
+    };
+    active.parentElement.setAttribute('class', 'active');
+    active.focus();
+}
+
+
+
+function addsidebar(getree,sidebar_css,home,filetypes){
+    var div_sidebar = document.querySelector(sidebar_css)
+    //div_nav.innerText = '';
+    //create_contents(div_nav); // static/sidebar.js
+    var div_nav = document.createElement('div');
+    div_sidebar.appendChild(div_nav);
+    div_nav.setAttribute('class','githubtree');
+
+
+    var d_ul = document.createElement('ul');
+    div_nav.appendChild(d_ul);
+
+    github_filetree(getree, div_nav, filetypes);
+
+    d_ul.setAttribute('id','addsidebarok');
+
+    var li = document.createElement('li');
+    d_ul.appendChild(li);
+
+    var a = document.createElement('a');
+    li.appendChild(a);
+    a.innerHTML = '<strong>home</strong>';
+    a.setAttribute('href',home);
+
+}
+
+
+function make_filenav(filenav_param){
+    if (!filenav_param.file_tree_url && !filenav_param.gtihub_repo) {
+        console.log("file_tree_url and gtihub_repo is null")
+        return;
+    }else{
+
+    };
+
+    if (filenav_param.file_tree_url) {
+        var file_tree = filenav_param.file_tree_url
+    }else{
+        var file_tree = "https://api.github.com/repos/" +
+        filenav_param.gtihub_repo +
+        "/git/trees/master?recursive=1&_="+
+        Date.parse(new Date());
+    }
+
+
+    var filetypes = filenav_param.filetypes || ['md']; //
+    var sidebar_css = filenav_param.sidebar_css || 'div.sidebar-nav'; //
+    var home = filenav_param.gtihub_repo.split('/')[1] || '#'
+
+    var getree = [];
+    ajax({
+        method: 'get',
+        url: file_tree,
+        success: function (response) {      // 此处为执行成功后的代码
+           getree = JSON.parse(response);
+           //github_filetree(getree, div_nav, filetypes)  // static/sidebar.js
+        },
+        fail:function (status) {
+            console.log('状态码为'+status);
+        }
+
+    });
+
+
+    var x = document.location.href.split('?')[0];
+    setInterval(function(){
+        if (!document.querySelector('#addsidebarok')) {
+            addsidebar(getree, sidebar_css,home,filetypes);
+            console.log('sidebar 1');
+        }
+        if (document.location.href.split('?')[0]!=x) {
+            x = document.location.href.split('?')[0];
+            fucos();
+        }
+    },3000);
 
 }

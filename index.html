@@ -80,8 +80,8 @@
           //div_nav.innerText = '';
           //create_contents(div_nav); // static/sidebar.js
           var div_nav = document.createElement('div');
-          div_sidebar.parentElement.appendChild(div_nav);
-          div_nav.setAttribute('class','sidebar-nav githubtree');
+          div_sidebar.appendChild(div_nav);
+          div_nav.setAttribute('class','githubtree');
         
           var d_ul = document.createElement('ul');
           div_nav.appendChild(d_ul);

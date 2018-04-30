@@ -63,7 +63,7 @@ function create_contents(div_nav) {
 
 function github_filetree (getree, div_nav, filetypes) {
 
-    z_da_t = getree.tree;
+    var z_da_t = getree.tree;
     for (var k = 0; k <= z_da_t.length - 1; k++) {
         var pa = z_da_t[k]['path'];
         var type_ = pa.split('.');

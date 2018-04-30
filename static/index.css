@@ -53,3 +53,6 @@
     color: #425638;
     font-weight: 600;
 }
+ul[folder]>a {
+    font-family: -webkit-body;
+}

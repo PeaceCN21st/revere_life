@@ -81,18 +81,18 @@
           //create_contents(div_nav); // static/sidebar.js
           var div_nav = document.createElement('div');
           div_sidebar.parentElement.appendChild(div_nav);
+          div_nav.setAttribute('class','sidebar');
         
           var d_ul = document.createElement('ul');
           div_nav.appendChild(d_ul);
           d_ul.setAttribute('id','addsidebarok');
-          d_ul.innerText = 'home'；
-          //var li = document.createElement('li');
-          //d_ul.appendChild(li);
+          var li = document.createElement('li');
+          d_ul.appendChild(li);
 
-          //var a = document.createElement('a');
-          //li.appendChild(a);
-          //a.innerHTML = '<strong>home</strong>';
-          //a.setAttribute('href',$docsify.nameLink);
+          var a = document.createElement('a');
+          li.appendChild(a);
+          a.innerHTML = '<strong>home</strong>';
+          a.setAttribute('href',$docsify.nameLink);
 
           github_filetree(getree, div_nav, filetypes);
 
@@ -114,11 +114,9 @@
         setInterval(function(){
             if (!document.querySelector('#addsidebarok')) {
                 addsidebar();
+                console.log('sidebar 1');
             }
-            console.log('sidebar 1')
         },3000);
-
-
 
     </script>
   
